@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/lgrees/resy-cli/internal/utils/http"
+	"github.com/dpmaloney/resy-cli/internal/utils/http"
 )
 
 type FindResponse struct {

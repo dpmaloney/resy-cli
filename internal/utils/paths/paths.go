@@ -4,7 +4,7 @@ import (
 	"os"
 	"path"
 
-	"github.com/lgrees/resy-cli/constants"
+	"github.com/dpmaloney/resy-cli/constants"
 )
 
 type paths struct {

@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/lgrees/resy-cli/internal/utils/date"
+	"github.com/dpmaloney/resy-cli/internal/utils/date"
 	"github.com/rs/zerolog"
 )
 
