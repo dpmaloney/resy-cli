@@ -130,12 +130,12 @@ func WaitThenBook(bookingDetails *BookingDetails, dryRun bool, logger zerolog.Lo
 	}
 
 	logger.Info().Msgf("waiting %d seconds until booking time: %s", duration/time.Second, bookingDetails.BookingDateTime)
-	time.Sleep(duration + (time.Millisecond * 200))
+	time.Sleep(duration + (time.Millisecond * 5))
 
 	err = Book(bookingDetails, dryRun, logger)
 
 	if err != nil {
-		time.Sleep((time.Millisecond * 100))
+		time.Sleep((time.Millisecond * 10))
 		logger.Info().Msg("retrying book job")
 		return Book(bookingDetails, dryRun, logger)
 	}
